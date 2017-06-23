@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <!-- 给实体Bean一个别名 -->
+        <typeAlias alias="MapContainer" type="cn.smart4j.blog.core.plugin.MapContainer"/>
+        <typeAlias alias="PageModel" type="cn.smart4j.blog.core.plugin.PageModel"/>
+
+        <typeAlias alias="User" type="cn.smart4j.blog.core.dal.entity.User"/>
+        <typeAlias alias="Category" type="cn.smart4j.blog.core.dal.entity.Category"/>
+        <typeAlias alias="Post" type="cn.smart4j.blog.core.dal.entity.Post"/>
+        <typeAlias alias="Upload" type="cn.smart4j.blog.core.dal.entity.Upload"/>
+        <typeAlias alias="Link" type="cn.smart4j.blog.core.dal.entity.Link"/>
+        <typeAlias alias="Comment" type="cn.smart4j.blog.core.dal.entity.Comment"/>
+        <typeAlias alias="Option" type="cn.smart4j.blog.core.dal.entity.Option"/>
+
+        <typeAlias alias="PostVO" type="cn.smart4j.blog.service.vo.PostVO"/>
+        <typeAlias alias="PageVO" type="cn.smart4j.blog.service.vo.PageVO"/>
+        <typeAlias alias="CommentVO" type="cn.smart4j.blog.service.vo.CommentVO"/>
+        <typeAlias alias="UploadVO" type="cn.smart4j.blog.service.vo.UploadVO"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="mybatis/UserMapper.xml"/>
+        <mapper resource="mybatis/CategoryMapper.xml"/>
+        <mapper resource="mybatis/PostMapper.xml"/>
+        <mapper resource="mybatis/UploadMapper.xml"/>
+        <mapper resource="mybatis/LinkMapper.xml"/>
+        <mapper resource="mybatis/CommentMapper.xml"/>
+        <mapper resource="mybatis/OptionMapper.xml"/>
+        <mapper resource="mybatis/TagMapper.xml"/>
+    </mappers>
+</configuration>
