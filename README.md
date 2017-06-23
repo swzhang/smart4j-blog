@@ -1,5 +1,5 @@
-zblog
-=======
+smart4j-blog
+============
 
 a java blog
 ---------------
